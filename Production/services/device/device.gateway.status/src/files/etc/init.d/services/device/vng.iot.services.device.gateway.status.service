@@ -1,0 +1,14 @@
+[Unit]
+Description= Device gateway status
+After=network.target
+
+[Service]
+ExecStartPre=/bin/sleep 12
+Type=forking
+ExecStart = /etc/init.d/vng.services.device.gateway.status start
+ExecStop = /etc/init.d/vng.services.device.gateway.status stop
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

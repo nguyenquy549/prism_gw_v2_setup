@@ -1,0 +1,76 @@
+{
+    "name": "vng.iot.services.synchronizer.door",
+    "id": "70:b3:d5:8d:88:20",
+    "synchronize": {
+        "events": 256,
+        "timeout": -1
+    },
+    "settings": {
+        "net": {
+            "processors": [],
+            "servers": [],
+            "listeners": [],
+            "channels": [
+                {
+                    "id": "local",
+                    "protocol": "MQTT",
+                    "settings": {
+                        "host": "localhost",
+                        "port": 1883
+                    }
+                },
+                {
+                    "id": "cloud",
+                    "protocol": "MQTT",
+                    "settings": {
+                        "host": "mqtt-customer.prism.vn",
+                        "port": 1886,
+                        "user": "mqttM1t3kBridge",
+                        "password": "mqttM1t3kBridge"
+                    }
+                }
+            ],
+            "publishers": [],
+            "subscribers": [
+                {
+                    "id": "cloud",
+                    "channel": "cloud",
+                    "topic": "vng-cloud/devices/%s/update_config/door"
+                }
+            ]
+        },
+        "storage": {
+            "storers": [
+                {
+                    "id": "local",
+                    "driver": "SQLITE",
+                    "settings": {
+                        "path": "/etc/vng/services/synchronizer/door.sqlite"
+                    }
+                }
+            ]
+        },
+        "main": {
+            "storage": {
+                "engine": "sqlite",
+                "settings": {
+                    "path": "/etc/vng/services/synchronizer/door.sqlite",
+                    "tmp": "/tmp/buton.sqlite",
+                    "write_tmp": "/tmp/door.write.sqlite",
+                    "backup": "/etc/vng/services/synchronizer/door.backup.sqlite",
+                    "timeout": 1000
+                }
+            },
+            "synchronizer": {
+                "url": "http://gbcstaging.zing.vn/cloud/sync/api/?"
+            },
+            "storer": "local",
+            "processor": "cloud",
+            "subscriber": "cloud",
+            "publisher": "local",
+            "subscribers": [
+                "cloud"
+            ]
+        }
+    }
+}

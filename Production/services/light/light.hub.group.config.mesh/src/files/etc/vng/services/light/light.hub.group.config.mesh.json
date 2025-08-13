@@ -1,0 +1,73 @@
+{
+    "name" : "services.light.hub.group.config.mesh",
+    "id": "AA:BB:CC:DD:EE:FF",
+    "synchronize": {
+        "events": 256,
+        "timeout": -1
+    },
+    "settings": {
+        "net": {
+            "processors":[
+            ],
+
+            "servers": [
+            ],
+
+            "listeners": [
+            ],
+
+            "channels":[{
+                    "id": "local",
+                    "protocol": "MQTT",
+                    "settings": {
+                        "host": "localhost",
+                        "port": 1883
+                    }
+                }, {
+                    "id": "cloud",
+                    "protocol": "MQTT",
+		    "settings": {
+			"host": "mqtt-customer.prism.vn",
+			"port": 1886,
+			"user": "mqttM1t3kBridge",
+			"password": "mqttM1t3kBridge"
+		    }
+                },{
+                    "id": "cloud_hub",
+                    "protocol": "MQTT",
+		    "settings": {
+			"host": "mqtt-customer.prism.vn",
+			"port": 1886,
+			"user": "mqttM1t3kBridge",
+			"password": "mqttM1t3kBridge"
+		    }
+                }
+            ],
+
+            "publishers": [{
+                    "id": "local",
+                    "channel": "local",
+                    "topic": "bluetooth.transmit"
+                }
+            ],
+
+            "subscribers": [{
+                    "id": "cloud",
+                    "channel": "cloud",
+                    "topic": "vng-cloud/devices/%s/update_config/lighthub_port"
+                },
+                {
+                    "id": "cloud_hub",
+                    "channel": "cloud_hub",
+                    "topic": "vng-cloud/devices/%s/update_config/lighthub"
+                }
+            ]
+        },
+
+        "main": {
+            "subscriber": "cloud",
+            "subscriber_hub": "cloud_hub",
+            "publisher": "local"
+        }
+    }
+}

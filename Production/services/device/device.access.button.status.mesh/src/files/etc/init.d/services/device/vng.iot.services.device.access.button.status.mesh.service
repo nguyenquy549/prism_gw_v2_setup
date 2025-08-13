@@ -1,0 +1,14 @@
+[Unit]
+Description= Device access button status mesh
+After=network.target
+
+[Service]
+ExecStartPre=/bin/sleep 12
+Type=forking
+ExecStart = /etc/init.d/vng.services.device.access.button.status.mesh start
+ExecStop = /etc/init.d/vng.services.device.access.button.status.mesh stop
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

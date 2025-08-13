@@ -1,0 +1,1 @@
+vng.iot.services.synchronizer.tag-1.0.0

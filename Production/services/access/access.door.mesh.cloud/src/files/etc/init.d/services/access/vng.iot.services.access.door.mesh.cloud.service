@@ -1,0 +1,14 @@
+[Unit]
+Description=Access door mesh cloud
+After=network.target
+
+[Service]
+ExecStartPre=/bin/sleep 15
+Type=forking
+ExecStart = /etc/init.d/vng.services.access.door.mesh.cloud start
+ExecStop = /etc/init.d/vng.services.access.door.mesh.cloud stop
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

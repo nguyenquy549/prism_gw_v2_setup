@@ -1,0 +1,14 @@
+[Unit]
+Description=Access button mesh local
+After=network.target
+
+[Service]
+ExecStartPre=/bin/sleep 12
+Type=forking
+ExecStart = /etc/init.d/vng.services.access.button.mesh.local start
+ExecStop = /etc/init.d/vng.services.access.button.mesh.local stop
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

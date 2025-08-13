@@ -1,0 +1,69 @@
+{
+    "name" : "vng.iot.services.access.reader.cloud.mqtt",
+    "id": "70:b3:d5:8d:88:20",
+    "synchronize": {
+        "events": 256,
+        "timeout": -1
+    },
+    "settings": {
+        "net": {
+            "processors":[],
+
+            "servers": [
+            ],
+
+            "listeners": [
+            ],
+
+            "channels":[{
+                    "id": "local_btn",
+                    "protocol": "MQTT",
+                    "settings": {
+                        "host": "localhost",
+                        "port": 1883
+                    }
+                },{
+                    "id": "local_door",
+                    "protocol": "MQTT",
+                    "settings": {
+                        "host": "localhost",
+                        "port": 1883
+                  }
+                },{
+                    "id": "cloud_door",
+                    "protocol": "MQTT",
+		    "settings": {
+			"host": "mqtt-customer.prism.vn",
+			"port": 1886,
+			"user": "mqttM1t3kBridge",
+			"password": "mqttM1t3kBridge"
+		    }
+                }
+            ],
+
+            "publishers": [{
+                    "id": "local_door",
+                    "channel": "local_door",
+                    "topic": "bluetooth.transmit"
+                },{
+                    "id": "cloud_door",
+                    "channel": "cloud_door",
+                    "topic": "vng-cloud/devices/access_reader/request"
+                }
+            ],
+
+            "subscribers": [{
+                    "id": "local_btn",
+                    "channel": "local_btn",
+                    "topic": "bluetooth.receive"
+                }
+            ]
+        },
+
+        "main": {
+            "subscriber":       "local_btn",
+            "publisher":        "local_door",
+            "publisher_cloud":  "cloud_door"
+        }
+    }
+}

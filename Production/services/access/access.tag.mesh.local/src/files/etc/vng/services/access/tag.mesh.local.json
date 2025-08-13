@@ -1,0 +1,68 @@
+{
+    "name" : "vng.iot.services.access.tag.local",
+    "id": "70:b3:d5:8d:88:20",
+    "synchronize": {
+        "events": 256,
+        "timeout": -1
+    },
+    "settings": {
+        "net": {
+            "processors":[
+            ],
+
+            "servers": [
+            ],
+
+            "listeners": [
+            ],
+
+            "channels":[{
+                    "id": "local_btn",
+                    "protocol": "MQTT",
+                    "settings": {
+                        "host": "localhost",
+                        "port": 1883
+                    }
+                }
+            ],
+
+            "publishers": [{
+                    "id": "local",
+                    "channel": "local_btn",
+                    "topic": "door.mesh.local"
+                }
+            ],
+
+            "subscribers": [{
+                    "id": "local_btn",
+                    "channel": "local_btn",
+                    "topic": "tag.mesh.local"
+                }
+            ]
+        },
+        "storage": {
+            "storers": [
+                {
+                    "id": "local",
+                    "driver": "SQLITE",
+                    "settings": {
+                        "path": "/etc/vng/services/synchronizer/tag.sqlite"
+                    }
+                },{
+                    "id": "door",
+                    "driver": "SQLITE",
+                    "settings": {
+                    "path": "/etc/vng/services/synchronizer/door.sqlite"
+                }
+            }
+            ]
+        },
+        "main": {
+            "tag_storer"     : "local",
+            "door_storer"       : "door",
+            "subscriber"        : "local_btn",
+            "publisher"         : "local",
+            "net"               :0
+        }
+    }
+}
