@@ -3,7 +3,7 @@ SCRIPT=$(readlink -f "$0")
 BASEDIR=$(dirname "$SCRIPT")
 sudo chmod -R 777 $BASEDIR/Production
 echo "***** Install Gateway V2 End *****"
-sudo apt-get update
+# sudo apt-get update
 sudo apt-get install build-essential git libssl-dev
 sudo apt install libjson-c-dev
 sudo apt-get install libcurl4-openssl-dev
