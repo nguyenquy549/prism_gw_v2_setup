@@ -1,9 +1,11 @@
 #!/bin/sh
+SCRIPT=$(readlink -f "$0")
+BASEDIR=$(dirname "$SCRIPT")
 echo "***** Install Gateway Services Start *****"
-sudo chmod 777 ../build/bin/*
-sudo chmod 777 ../build/lib/*
+sudo chmod 777 $BASEDIR/../build/bin/*
+sudo chmod 777 $BASEDIR/../build/lib/*
 
-sudo cp -rf ../build/lib/*  /usr/local/lib
+sudo cp -rf $BASEDIR/../build/lib/*  /usr/local/lib
 sudo /sbin/ldconfig
 ldconfig -p | grep libiot
 ./vng.services.access.button.mesh.cloud.mqtt.sh

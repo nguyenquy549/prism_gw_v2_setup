@@ -1,5 +1,6 @@
 #!/bin/sh
 echo "***** Install Paho MQTT Start *****"
+SCRIPT=$(readlink -f "$0")
 BASEDIR=$(dirname "$SCRIPT")
 mkdir -p /usr/local/include
 sudo install -m 644  $BASEDIR/build/output/libpaho-mqtt3c.so.1.3 /usr/local/lib
