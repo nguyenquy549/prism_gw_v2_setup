@@ -9,8 +9,8 @@ sudo apt install libjson-c-dev
 sudo apt-get install libcurl4-openssl-dev
 sudo apt-get install libsqlite3-dev
 sudo apt install build-essential libpython3-dev libdbus-1-dev
-$BASEDIR/build/mqtt/serial_install.sh
-$BASEDIR/build/paho.mqtt.c/paho_install.sh
-$BASEDIR/build/serial/serial_install.sh
-$BASEDIR/install/install.sh
-sudo reboot
+$BASEDIR/Production/build/mqtt/serial_install.sh
+$BASEDIR/Production/build/paho.mqtt.c/paho_install.sh
+$BASEDIR/Production/build/serial/serial_install.sh
+$BASEDIR/Production/install/install.sh
+#sudo reboot

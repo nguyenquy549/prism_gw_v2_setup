@@ -1,0 +1,167 @@
+DEV STAGE: RPI_GW02=Mitek2024!
+eth0 = 10.223.243.6
+wlan0= 10.223.242.180
+
+***Any change to wifi config. only run restart hostapd.service and networking.service
+
++ dns configuration issue cannot apt install or connect
+  sudo nano /etc/resolv.conf
+  nameserver 8.8.8.8
+  nameserver 8.8.4.4
+ + ip addr flush to clear duplicate ip
+
+//////////////////////////////////////////
+
+network
+*** eth0 -nano ip
+-------------avoid conflict two interfaces (eth0 and wlan0)
+sudo apt install ifplugd
+sudo nano /etc/default/ifplugd
+```INTERFACES="eth0"
+HOTPLUG_INTERFACES="wlan0"
+ARGS="-q -f -u0 -d10 -I"```
+sudo systemctl enable ifplugd
+sudo systemctl start ifplugd
+
+-----------------------------------------------------------
+*** wlan0 -nano ip --> nano wpa_sup			   
+-----------------------------------------------------------
+
+*** wlan-ap0
+-----------------------create script
+sudo nano /usr/local/bin/create_wlan0_ap.sh
+
+```#!/bin/bash
+# Add virtual Wi-Fi interface
+iw dev wlan0 interface add wlan0-ap type __ap```
+
+sudo chmod +x /usr/local/bin/create_wlan0_ap.sh
+##sudo crontab -e
+##@reboot /usr/local/bin/create_wlan0_ap.sh (adding this line to opening file)
+
+
+----------------------create service
+
+sudo nano /etc/systemd/system/create_wlan0_ap.service
+```
+[Unit]
+Description=Create wlan0-ap interface
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/create_wlan0_ap.sh
+
+[Install]
+WantedBy=multi-user.target```
+
+
+---------------------config AP hostapd
++++ sudo apt install hostapd
+sudo nano /etc/hostapd/hostapd.conf
+```
+country_code=VN
+interface=wlan0-ap
+ssid=RPI_GW02
+wpa_passphrase=Mitek2024!
+wpa=2
+wpa_key_mgmt=WPA-PSK
+channel=7
+hw_mode=g
+auth_algs=1
+ignore_broadcast_ssid=0
+macaddr_acl=0  # Allow all devices (optional)
+wpa_key_mgmt=WPA-PSK
+rsn_pairwise=CCMP
+```
+
+------------------dns dhcp server dnsmaq
++++ sudo apt install dnsmasq //dns server
+sudo nano /etc/dnsmasq.conf
+interface=wlan0-ap              # Use the wlan0-ap interface for serving DHCP
+dhcp-range=192.168.21.100,192.168.21.200,12h  # DHCP range and lease time
+dhcp-option=3,192.168.21.1      # Gateway (the Pi itself, acting as the gateway)
+dhcp-option=6,8.8.8.8,8.8.4.4      # DNS server (the Pi itself, or another DNS server)
+
+
+-----------------internet forward (99-sysctl.conf)
+sudo nano /etc/sysctl.conf-->net.ipv4.ip_forward=1-->sudo sysctl -p (apply change network internet connect)
+sudo apt install iptables
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE (enable_NAT eth0 to wlan0)
+sudo iptables -A FORWARD -i br0 -o eth0 -j ACCEPT
+sudo iptables -A FORWARD -i eth0 -o br0 -j ACCEPT
+
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+      +++++++++++++++++++++++++++++++++++++++++++++ wlan0-->wlan0-ap
+sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+sudo iptables -A FORWARD -i wlan0-ap -o wlan0 -j ACCEPT
+sudo iptables -A FORWARD -i wlan0 -o wlan0-ap -m state --state RELATED,ESTABLISHED -j ACCEPT
+sudo iptables -A INPUT -j ACCEPT
+sudo iptables -A OUTPUT -j ACCEPT
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++DEWARD
+sudo iptables -t nat -D POSTROUTING -o wlan0 -j MASQUERADE
+sudo iptables -D FORWARD -i wlan0-ap -o wlan0 -j ACCEPT
+sudo iptables -D FORWARD -i wlan0 -o wlan0-ap -m state --state ESTABLISHED,RELATED -j ACCEPT
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++==
+sudo apt install iptables-persistent
+sudo netfilter-persistent save (save config for every next reboot)
+------------
+sudo systemctl daemon-reload
+sudo systemctl enable create_wlan0_ap.service
+sudo systemctl start create_wlan0_ap.service
+sudo systemctl unmask hostapd.service
+sudo systemctl enable hostapd.service
+sudo systemctl restart hostapd.service
+sudo systemctl unmask dnsmasq.service
+sudo systemctl enable dnsmasq.service
+sudo systemctl restart dnsmasq.service
+sudo ifdown wlan0-ap && sudo ifup wlan0-ap
+sudo systemctl restart networking.service
+
+sudo apt install bridge-utils
+
+
+
+
+
+
+
+
+edit tab size
+/etc/nanorc
+adding -->>
+set tabsize 4
+set tabstospaces
+
+
+
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE 
+sudo iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT 
+sudo iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
+sudo iptables -A INPUT -j ACCEPT
+sudo iptables -A OUTPUT -j ACCEPT 
+
+sudo nano /etc/rc.local
+# Enable IP forwarding
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Add NAT for wlan0 to eth0
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
+iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+
+
+bridge
+1. sudo apt-get install bridge-utils
+2. sudo brctl addbr br0
+
+
+
+
+
+
+
+

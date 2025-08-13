@@ -1,0 +1,32 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+source /etc/network/interfaces.d/*
+################### ETH0 ########################
+auto eth0
+iface eth0 inet static
+	address 192.168.1.6
+    netmask 255.255.255.0
+    gateway 192.168.1.1
+    metric 100
+#################################################
+
+################## BRIDGE 0 #####################
+auto br0
+iface br0 inet static
+    address 192.168.21.1
+    netmask 255.255.255.0
+    #gateway 192.168.21.1
+    bridge_ports eth1 wlan0-ap
+    bridge_stp off              
+    bridge_fd 0
+    bridge_maxwait 0
+#################################################
+
+
+auto wlan0-ap
+iface wlan0-ap inet manual
+#################### ETH1 ######################
+auto eth1
+iface eth1 inet manual
+################################################
+    

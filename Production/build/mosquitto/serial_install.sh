@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo "***** Setup mosquitto Config  Start *****" 
+SCRIPT=$(readlink -f "$0")
 BASEDIR=$(dirname "$SCRIPT")
 sudo apt install -y mosquitto mosquitto-clients
 sudo systemctl enable mosquitto.service
