@@ -12,5 +12,5 @@ sudo apt install build-essential libpython3-dev libdbus-1-dev
 $BASEDIR/Production/build/mosquitto/mosquitto_install.sh
 $BASEDIR/Production/build/paho.mqtt.c/paho_install.sh
 $BASEDIR/Production/build/serial/serial_install.sh
-$BASEDIR/Production/install/install.sh
+# $BASEDIR/Production/install/install.sh
 #sudo reboot
