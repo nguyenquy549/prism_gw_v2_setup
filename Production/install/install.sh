@@ -5,7 +5,7 @@ echo "***** Install Gateway Services Start *****"
 sudo chmod 777 $BASEDIR/../build/bin/*
 sudo chmod 777 $BASEDIR/../build/lib/*
 
-sudo cp -rf $BASEDIR/../build/lib/*  /usr/local/lib
+sudo cp $BASEDIR/../build/lib/*  /usr/local/lib
 sudo /sbin/ldconfig
 ldconfig -p | grep libiot
 $BASEDIR/vng.services.access.button.mesh.cloud.mqtt.sh
