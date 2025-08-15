@@ -1,0 +1,14 @@
+[Unit]
+Description=Bluetooth mesh serial
+After=network.target
+
+[Service]
+ExecStartPre=/bin/sleep 15
+Type=forking
+ExecStart = /etc/init.d/vng.services.bluetooth.mesh.serial start
+ExecStop = /etc/init.d/vng.services.bluetooth.mesh.serial stop
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

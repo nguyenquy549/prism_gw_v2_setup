@@ -1,0 +1,68 @@
+{
+    "name" : "vng.iot.services.access.door.mesh",
+    "id": "AA:BB:CC:DD:EE:FF",
+    "synchronize": {
+        "events": 256,
+        "timeout": -1
+    },
+    "settings": {
+        "net": {
+            "processors":[
+            ],
+
+            "servers": [
+            ],
+
+            "listeners": [
+            ],
+
+            "channels":[{
+                    "id": "local",
+                    "protocol": "MQTT",
+                    "settings": {
+                        "host": "localhost",
+                        "port": 1883
+                    }
+                }, {
+                    "id": "local_2",
+                    "protocol": "MQTT",
+                    "settings": {
+                        "host": "localhost",
+                        "port": 1883
+                    }
+                }
+            ],
+
+            "publishers": [{
+                    "id": "local",
+                    "channel": "local",
+                    "topic": "bluetooth.transmit"
+                }
+            ],
+
+            "subscribers": [{
+                    "id": "local_2",
+                    "channel": "local_2",
+                    "topic": "vng-local/devices/access_door"
+                }
+            ]
+        },
+        "storage": {
+            "storers": [{
+                    "id": "server",
+                    "driver": "REDIS",
+                    "settings": {
+                        "port": 6379,
+                        "host": "172.26.12.11"
+                    }
+                }
+            ]
+        },
+
+        "main": {
+            "subscriber": "local_2",
+            "storer": "server",
+            "publisher": "local"
+        }
+    }
+}

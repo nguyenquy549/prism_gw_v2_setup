@@ -1,0 +1,14 @@
+[Unit]
+Description=Access button mesh cloud mqtt
+After=network.target
+
+[Service]
+ExecStartPre=/bin/sleep 12
+Type=forking
+ExecStart = /etc/init.d/vng.services.access.button.mesh.cloud.mqtt start
+ExecStop = /etc/init.d/vng.services.access.button.mesh.cloud.mqtt stop
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

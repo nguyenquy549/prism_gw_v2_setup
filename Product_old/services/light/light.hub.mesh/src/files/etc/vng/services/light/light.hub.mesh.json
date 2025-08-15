@@ -1,0 +1,73 @@
+{
+    "name" : "services.light.hub.mesh",
+    "id": "AA:BB:CC:DD:EE:FF",
+    "synchronize": {
+        "events": 256,
+        "timeout": -1
+    },
+    "settings": {
+        "net": {
+            "processors":[
+            ],
+
+            "servers": [
+            ],
+
+            "listeners": [
+            ],
+
+            "channels":[{
+                    "id": "local",
+                    "protocol": "MQTT",
+                    "settings": {
+                        "host": "localhost",
+                        "port": 1883
+                    }
+                },{
+                    "id": "cloud",
+                    "protocol": "MQTT",
+		    "settings": {
+			"host": "mqtt-customer.prism.vn",
+			"port": 1886,
+			"user": "mqttM1t3kBridge",
+			"password": "mqttM1t3kBridge"
+		    }
+                },{
+                    "id": "cloud_response",
+                    "protocol": "MQTT",
+		    "settings": {
+			"host": "mqtt-customer.prism.vn",
+			"port": 1886,
+			"user": "mqttM1t3kBridge",
+			"password": "mqttM1t3kBridge"
+		    }
+                }
+            ],
+
+            "publishers": [{
+                    "id": "local",
+                    "channel": "local",
+                    "topic": "bluetooth.transmit"
+                },
+                {
+                    "id": "cloud_response",
+                    "channel": "cloud_response",
+                    "topic": "vng-cloud/devices/switch_on_off/response"
+                }
+            ],
+
+            "subscribers": [{
+                    "id": "cloud",
+                    "channel": "cloud",
+                    "topic": "vng-cloud/devices/%s/switch_on_off/request"
+                }
+            ]
+        },
+
+        "main": {
+            "subscriber": "cloud",
+            "publisher": "local",
+            "publisher_response": "cloud_response"
+        }
+    }
+}

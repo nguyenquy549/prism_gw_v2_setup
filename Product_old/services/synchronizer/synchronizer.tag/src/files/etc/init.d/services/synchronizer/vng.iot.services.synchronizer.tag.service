@@ -1,0 +1,13 @@
+[Unit]
+Description=Access synchronizer cloud
+After=network.target
+
+[Service]
+Type=forking
+ExecStart = /etc/init.d/vng.services.synchronizer.tag start
+ExecStop = /etc/init.d/vng.services.synchronizer.tag stop
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
