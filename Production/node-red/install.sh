@@ -1,5 +1,5 @@
-#!/bin/sh
-echo "***** Install Paho MQTT Start *****"
+#!/bin/bash
+echo "***** Install Node-RED Start *****"
 SCRIPT=$(readlink -f "$0")
 BASEDIR=$(dirname "$SCRIPT")
 
@@ -13,3 +13,4 @@ sudo ln -s /etc/nginx/sites-available/nodered /etc/nginx/sites-enabled/
 sudo rm /etc/nginx/sites-enabled/default
 sudo nginx -t
 sudo systemctl reload nginx
+echo "***** Install Node-RED End *****"
