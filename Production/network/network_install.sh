@@ -38,5 +38,6 @@ echo ---- SAVE PERSISTENT CONFIG ----
 sudo netfilter-persistent save
 echo ---- RESTART NETWORKING ----
 sudo systemctl restart networking.service
-sleep 5
-sudo reboot
+sudo systemctl status networking.service
+# sleep 5
+# sudo reboot
