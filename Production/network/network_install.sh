@@ -3,11 +3,6 @@ AP=hostapd
 DNS=dnsmasq
 WIFI=wpa_supplicant
 
-sudo systemctl disable dhcpcd
-sudo systemctl stop dhcpcd
-sudo systemctl disable NetworkManager
-sudo systemctl stop NetworkManager
-
 sudo apt install ifupdown
 sudo apt install -y hostapd dnsmasq netfilter-persistent iptables-persistent iptables bridge-utils
 sudo cp interfaces /etc/network
@@ -21,9 +16,12 @@ sudo cp create_wlan0_ap.sh /usr/local/bin
 sudo chmod +x /usr/local/bin/create_wlan0_ap.sh
 sudo cp create_wlan0_ap.service /etc/systemd/system
 
+sudo systemctl disable dhcpcd
+sudo systemctl stop dhcpcd
+sudo systemctl disable NetworkManager
+sudo systemctl stop NetworkManager
+
 echo ---- DONE ETH0 CONFIG ----
-sudo systemctl enable networking.service
-sudo systemctl start networking.service
 echo ---- DAEMON RELOAD ----
 sudo systemctl daemon-reload
 echo ---- ENABLE WLAN0_AP ----
@@ -42,7 +40,8 @@ sudo systemctl mask wpa_supplicant.service
 echo ---- SAVE PERSISTENT CONFIG ----
 sudo netfilter-persistent save
 echo ---- RESTART NETWORKING ----
-sudo systemctl restart networking.service
+sudo systemctl enable networking.service
+sudo systemctl start networking.service
 sudo systemctl status networking.service
 # sleep 5
 # sudo reboot
