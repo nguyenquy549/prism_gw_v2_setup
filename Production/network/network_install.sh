@@ -3,6 +3,11 @@ AP=hostapd
 DNS=dnsmasq
 WIFI=wpa_supplicant
 
+sudo systemctl disable dhcpcd
+sudo systemctl stop dhcpcd
+sudo systemctl disable NetworkManager
+sudo systemctl stop NetworkManager
+
 sudo apt install ifupdown
 sudo apt install -y hostapd dnsmasq netfilter-persistent iptables-persistent iptables bridge-utils
 sudo cp interfaces /etc/network
