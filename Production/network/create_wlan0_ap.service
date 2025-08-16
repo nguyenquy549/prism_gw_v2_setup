@@ -5,7 +5,6 @@ After=network.target
 [Service]
 Type=oneshot
 ExecStart=/usr/local/bin/create_wlan0_ap.sh
-RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target

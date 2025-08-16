@@ -110,3 +110,32 @@ sudo systemctl reload nginx
 Now you can open:
 
 http://<raspberry-pi-ip>/
+
+
+
+🔹 1. Tạm thời stop service tạo AP
+sudo systemctl stop create_wlan0_ap.service
+Service create_wlan0_ap.service của bạn chỉ chạy kiểu oneshot → nó không giữ tiến trình sống.
+
+Nhưng interface wlan0-ap vẫn còn tồn tại sau khi stop.
+
+🔹 2. Xoá interface wlan0-ap (tắt AP ngay)
+sudo iw dev wlan0-ap del
+
+
+→ Interface ảo biến mất, không phát Wi-Fi nữa.
+
+🔹 3. Tắt luôn service để lần boot sau không tạo lại
+sudo systemctl disable create_wlan0_ap.service
+
+🔹 4. Nếu muốn bật lại
+
+Enable service:
+
+sudo systemctl enable create_wlan0_ap.service
+sudo systemctl start create_wlan0_ap.service
+
+
+Hoặc tạo lại interface bằng tay:
+
+sudo iw dev wlan0 interface add wlan0-ap type __ap
