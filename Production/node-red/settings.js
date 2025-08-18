@@ -78,10 +78,15 @@ module.exports = {
         "type": "credentials",
         "users": [
             {
-                "username": "admin",
+                "username": "dev",
                 "password": "$2y$08$X3Pejq6/aBHe/cI35MOPw.OU7MiD1YqqmQUPvtSyklqJdy1JtARHe",
                 "permissions": "*"
-            }
+            },
+            {
+                "username": "admin",
+                "password": "$2y$08$LH0ivLtPmDMF.8FIq37fxuER3dlPDM19VyQYwrIwjA8dgjhkyqynS",
+                "permissions": "dashboard"
+            },
         ]
     },
 
@@ -125,7 +130,7 @@ module.exports = {
      * The `pass` field is a bcrypt hash of the password.
      * See https://nodered.org/docs/security.html#generating-the-password-hash
      */
-    //httpNodeAuth: {user:"user",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
+    httpNodeAuth: { user: "admin", pass: "$2y$08$LH0ivLtPmDMF.8FIq37fxuER3dlPDM19VyQYwrIwjA8dgjhkyqynS" },
     //httpStaticAuth: {user:"user",pass:"$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN."},
 
 /*******************************************************************************
@@ -133,7 +138,7 @@ module.exports = {
  *  - uiPort
  *  - uiHost
  *  - apiMaxLength
- *  - httpServerOptions
+ *  - httpServerOptionsy
  *  - httpAdminRoot
  *  - httpAdminMiddleware
  *  - httpAdminCookieOptions
