@@ -1,0 +1,158 @@
+[
+    {
+        "id": "3f36dd3c63123d9b",
+        "type": "tab",
+        "label": "Monitor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8565d64f4aa2d919",
+        "type": "exec",
+        "z": "3f36dd3c63123d9b",
+        "command": "systemctl list-units --type=service --all | grep vng",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 700,
+        "y": 340,
+        "wires": [
+            [
+                "4ba0e95ceaee534a"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4ba0e95ceaee534a",
+        "type": "function",
+        "z": "3f36dd3c63123d9b",
+        "name": "function 6",
+        "func": "let lines = msg.payload.trim().split(\"\\n\");\nlet data = [];\nlines.forEach(line => {\n    let parts = line.trim().split(/\\s+/);\n    // Tách thành 5 cột: NAME, LOAD, ACTIVE, SUB, DESCRIPTION\n    let name = parts[0];\n    let load = parts[1];\n    let active = parts[2];\n    let sub = parts[3];\n    let description = parts.slice(4).join(\" \");\n\n    data.push({\n        name,\n        load,\n        active,\n        sub,\n        description\n    });\n});\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 340,
+        "wires": [
+            [
+                "c6d3c3c0fd5de078"
+            ]
+        ]
+    },
+    {
+        "id": "c6d3c3c0fd5de078",
+        "type": "ui_template",
+        "z": "3f36dd3c63123d9b",
+        "group": "104ea9557d862a45",
+        "name": "",
+        "order": 1,
+        "width": 12,
+        "height": 10,
+        "format": "<table class=\"nr-dashboard-theme\" style=\"width:100%; border-collapse:collapse;\">\n    <thead style=\"background:#333; color:white;\">\n        <tr>\n            <th style=\"padding:6px;\">Name</th>\n            <th style=\"padding:6px;\">Load</th>\n            <th style=\"padding:6px;\">Active</th>\n            <th style=\"padding:6px;\">Sub</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr ng-repeat=\"row in msg.payload\" ng-style=\"{'background-color': \n                     row.active==='active' && row.sub==='running' ? '#d4edda' : \n                     (row.active==='failed' || row.sub==='failed' ? '#f8d7da' : '#fff3cd')}\">\n            <td style=\"padding:6px;\">{{row.name}}</td>\n            <td style=\"padding:6px;\">{{row.load}}</td>\n            <td style=\"padding:6px; font-weight:bold; color: \n          row.active==='active' ? 'green' : \n          (row.active==='inactive' ? 'gray' : 'red')\">\n                {{row.active}}\n            </td>\n            <td style=\"padding:6px; font-weight:bold; color: \n          row.sub==='running' ? 'green' : \n          (row.sub==='dead' ? 'gray' : 'red')\">\n                {{row.sub}}\n            </td>\n        </tr>\n    </tbody>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1260,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69002989829b112f",
+        "type": "inject",
+        "z": "3f36dd3c63123d9b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "8565d64f4aa2d919"
+            ]
+        ]
+    },
+    {
+        "id": "6a66210a68361ae5",
+        "type": "ui_button",
+        "z": "3f36dd3c63123d9b",
+        "name": "Reload",
+        "group": "104ea9557d862a45",
+        "order": 2,
+        "width": 12,
+        "height": 1,
+        "passthru": false,
+        "label": "Reload",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "8565d64f4aa2d919"
+            ]
+        ]
+    },
+    {
+        "id": "104ea9557d862a45",
+        "type": "ui_group",
+        "name": "Mesh",
+        "tab": "f1acd3cc7c7da9a2",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f1acd3cc7c7da9a2",
+        "type": "ui_tab",
+        "name": "Services Mesh",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "66326d489c70291d",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.5"
+        }
+    }
+]
