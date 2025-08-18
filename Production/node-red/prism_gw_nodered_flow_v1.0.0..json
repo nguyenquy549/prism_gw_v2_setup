@@ -1,6 +1,14 @@
 [
     {
-        "id": "3f36dd3c63123d9b",
+        "id": "539c5e4ac9d976b6",
+        "type": "tab",
+        "label": "Configuration",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5491aebc95f3be73",
         "type": "tab",
         "label": "Monitor",
         "disabled": false,
@@ -8,9 +16,2315 @@
         "env": []
     },
     {
-        "id": "8565d64f4aa2d919",
+        "id": "3f94d6302a0424e7",
+        "type": "tab",
+        "label": "Debug",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "939c46d87dd12260",
+        "type": "tab",
+        "label": "System"
+    },
+    {
+        "id": "f1acd3cc7c7da9a2",
+        "type": "ui_tab",
+        "name": "Services Mesh",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e0aff3d4525eceac",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a74e3a625d96e236",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ec5273cd94f254b8",
+        "type": "ui_tab",
+        "name": "Configuration",
+        "icon": "Config",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a3c8e60dd497c90d",
+        "type": "ui_group",
+        "name": "Configuration",
+        "tab": "ec5273cd94f254b8",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9ca45bb714ec912f",
+        "type": "ui_spacer",
+        "z": "539c5e4ac9d976b6",
+        "name": "spacer",
+        "group": "a3c8e60dd497c90d",
+        "order": 14,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "5e7b3e6edff4ce4d",
+        "type": "ui_tab",
+        "name": "Debug",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e454f5153a277a7a",
+        "type": "ui_group",
+        "name": "MQTT_local",
+        "tab": "5e7b3e6edff4ce4d",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f52f172b451c2709",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "989f541f8073f49c",
+        "type": "ui_tab",
+        "name": "System",
+        "icon": "computer",
+        "order": 4
+    },
+    {
+        "id": "f987673bee729608",
+        "type": "ui_group",
+        "name": "CPU Load",
+        "tab": "989f541f8073f49c",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "928d556347f4cc50",
+        "type": "ui_group",
+        "name": "Memory",
+        "tab": "989f541f8073f49c",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "a345db098d4c0211",
+        "type": "ui_group",
+        "name": "System Information",
+        "tab": "989f541f8073f49c",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "981fdffae213af47",
+        "type": "ui_group",
+        "name": "Signin",
+        "tab": "ec5273cd94f254b8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "104ea9557d862a45",
+        "type": "ui_group",
+        "name": "Mesh",
+        "tab": "f1acd3cc7c7da9a2",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "20fc27fe644d194c",
         "type": "exec",
-        "z": "3f36dd3c63123d9b",
+        "z": "539c5e4ac9d976b6",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1330,
+        "y": 480,
+        "wires": [
+            [
+                "0ab9d04ffd20a9bd"
+            ],
+            [
+                "0ab9d04ffd20a9bd"
+            ],
+            [
+                "0ab9d04ffd20a9bd"
+            ]
+        ]
+    },
+    {
+        "id": "b7248ab60bdfe87c",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "interfaces",
+        "filename": "/home/admin/config_gw/interfaces",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 820,
+        "y": 480,
+        "wires": [
+            [
+                "2a7afb284b50422d",
+                "56132623c5fd6927"
+            ]
+        ]
+    },
+    {
+        "id": "5d37f3e8ddee8c7d",
+        "type": "file in",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "filename": "/etc/network/interfaces",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "8c31261c61dbaa33"
+            ]
+        ]
+    },
+    {
+        "id": "fc6cf5346bf1ea59",
+        "type": "inject",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "bce0deb76c75038f",
+                "52dd5fe1d8759b2e",
+                "5ec27bb1832365c2"
+            ]
+        ]
+    },
+    {
+        "id": "8c31261c61dbaa33",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "Loading Network",
+        "func": "function extractEth0Config(content) {\n    const eth0Block = content.match(/iface eth0 inet static([\\s\\S]*?)metric \\d+/);\n    if (!eth0Block) return null;\n\n    const block = eth0Block[1];\n\n    const address = block.match(/address\\s+([^\\s]+)/)?.[1];\n    const netmask = block.match(/netmask\\s+([^\\s]+)/)?.[1];\n    const gateway = block.match(/gateway\\s+([^\\s]+)/)?.[1];\n    const dns = block.match(/dns-nameservers\\s+([^\\n]+)/)?.[1]?.split(/\\s+/);\n\n    return {\n        address,\n        netmask,\n        gateway,\n        primary_dns: dns?.[0] || null,\n        second_dns: dns?.[1] || null\n    };\n}\nvar network = extractEth0Config(msg.payload);\n\n\nvar cfg = global.get(\"cfg\");\ncfg.network = network;\ncfg.new_network = network;\n\nnode.warn(network);\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 360,
+        "wires": [
+            [
+                "83976111dd9c9964"
+            ]
+        ]
+    },
+    {
+        "id": "64e9c20638c5e771",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "Network template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "# interfaces(5) file used by ifup(8) and ifdown(8)\n# Include files from /etc/network/interfaces.d:\nsource /etc/network/interfaces.d/*\n################### ETH0 ########################\nauto eth0\niface eth0 inet static\n    address {{payload.address}}\n    netmask {{payload.netmask}}\n    gateway {{payload.gateway}}\n    dns-nameservers {{payload.primary_dns}} {{payload.second_dns}}\n    metric 100\n#################################################\n\n################## BRIDGE 0 #####################\nauto br0\niface br0 inet static\n    address 192.168.21.1\n    netmask 255.255.255.0\n    #gateway 192.168.21.1\n    bridge_ports eth1 wlan0-ap\n    bridge_stp off              \n    bridge_fd 0\n    bridge_maxwait 0\n#################################################\n\n\nauto wlan0-ap\niface wlan0-ap inet manual\n#################### ETH1 ######################\nauto eth1\niface eth1 inet manual\n################################################",
+        "output": "str",
+        "x": 590,
+        "y": 460,
+        "wires": [
+            [
+                "6e44472adad0b20b",
+                "b7248ab60bdfe87c"
+            ]
+        ]
+    },
+    {
+        "id": "6e44472adad0b20b",
+        "type": "debug",
+        "z": "539c5e4ac9d976b6",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "2a7afb284b50422d",
+        "type": "debug",
+        "z": "539c5e4ac9d976b6",
+        "name": "debug 5",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "56132623c5fd6927",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "cmd network",
+        "func": "var cfg = global.get(\"cfg\");\nvar hostap_cmd = \"\";\n// if (cfg.changed.hostap == true)\n// {\n//     cfg.changed.hostap = false;\n//     if (cfg.hostap == true) {\n//         hostap_cmd = \"sudo systemctl enable create_wlan0_ap.service;\\\n//                     sudo systemctl start create_wlan0_ap.service;\";\n//     }\n//     else {\n//         hostap_cmd = \"sudo iw dev wlan0-ap del;\\\n//                 sudo systemctl disable create_wlan0_ap.service;\";\n//     }\n// }\nvar network_cmd = \"\";\n\ncfg.changed.network = false;\nnetwork_cmd = \"sudo cp /etc/network/interfaces /etc/network/interfaces.bak; \\\n            sudo cp /home/admin/config_gw/interfaces /etc/network/interfaces;\\\n            sudo systemctl restart networking.service;\\\n            sudo systemctl status networking.service;\"\n\ncfg.changed.mqtt = false;\n\nmsg.payload = `${network_cmd}\n                ${hostap_cmd}\n                sleep 5;\\\n                sudo reboot;`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 480,
+        "wires": [
+            [
+                "b9ef112b5a49d43d",
+                "d456546714343e2f",
+                "104240ca68736365"
+            ]
+        ]
+    },
+    {
+        "id": "0ab9d04ffd20a9bd",
+        "type": "debug",
+        "z": "539c5e4ac9d976b6",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "9b1b1f2f196a0503",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "address",
+        "func": "msg.payload = global.get(\"cfg\").network.address;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 620,
+        "wires": [
+            [
+                "88692d185b68b433"
+            ]
+        ]
+    },
+    {
+        "id": "83976111dd9c9964",
+        "type": "link out",
+        "z": "539c5e4ac9d976b6",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "baefb88374c22a87"
+        ],
+        "x": 825,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "baefb88374c22a87",
+        "type": "link in",
+        "z": "539c5e4ac9d976b6",
+        "name": "link in 1",
+        "links": [
+            "556ceed1308950f0",
+            "83976111dd9c9964"
+        ],
+        "x": 365,
+        "y": 740,
+        "wires": [
+            [
+                "9b1b1f2f196a0503",
+                "5bf15347bfa6a8e9",
+                "50c46c68e70ba2ab",
+                "d23e3a1e65c6c01a",
+                "72b466b6aa25ecd8"
+            ]
+        ]
+    },
+    {
+        "id": "136386540ca0d24a",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "new address",
+        "func": "function isValidIPv4(ip) {\n    const ipv4Regex = /^(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)){3}$/;\n    return ipv4Regex.test(ip);\n}\n\nlet ivalid = isValidIPv4(msg.payload);\nif (!ivalid)\n{\n    msg.payload = `${msg.payload} is invalid IPv4`\n    return msg;\n}\nelse\n{\n    var cfg =  global.get(\"cfg\");\n    cfg.new_network.address = msg.payload;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 620,
+        "wires": [
+            [
+                "0fcd25c90461ce53"
+            ]
+        ]
+    },
+    {
+        "id": "5bf15347bfa6a8e9",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "netmask",
+        "func": "msg.payload = global.get(\"cfg\").network.netmask;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 680,
+        "wires": [
+            [
+                "febca4478b12e5f5"
+            ]
+        ]
+    },
+    {
+        "id": "50c46c68e70ba2ab",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "gateway",
+        "func": "msg.payload = global.get(\"cfg\").network.gateway;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "72ebb0f20de0fc4d"
+            ]
+        ]
+    },
+    {
+        "id": "d23e3a1e65c6c01a",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "primary_dns",
+        "func": "msg.payload = global.get(\"cfg\").network.primary_dns;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 800,
+        "wires": [
+            [
+                "7afe1d6a26484793"
+            ]
+        ]
+    },
+    {
+        "id": "72b466b6aa25ecd8",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "second_dns",
+        "func": "msg.payload = global.get(\"cfg\").network.second_dns;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 860,
+        "wires": [
+            [
+                "3010c6f9cc5c971e"
+            ]
+        ]
+    },
+    {
+        "id": "36f1066b26eb9e0e",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "new netmask",
+        "func": "function isValidIPv4(ip) {\n    const ipv4Regex = /^(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)){3}$/;\n    return ipv4Regex.test(ip);\n}\n\nlet ivalid = isValidIPv4(msg.payload);\nif (!ivalid)\n{\n    msg.payload = `${msg.payload} is invalid IPv4`\n    return msg;\n}\nelse\n{\n    var cfg =  global.get(\"cfg\");\n    cfg.new_network.netmask = msg.payload;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 680,
+        "wires": [
+            [
+                "0fcd25c90461ce53"
+            ]
+        ]
+    },
+    {
+        "id": "a1b19c731b52f784",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "new gateway",
+        "func": "function isValidIPv4(ip) {\n    const ipv4Regex = /^(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)){3}$/;\n    return ipv4Regex.test(ip);\n}\n\nlet ivalid = isValidIPv4(msg.payload);\nif (!ivalid)\n{\n    msg.payload = `${msg.payload} is invalid IPv4`\n    return msg;\n}\nelse\n{\n    var cfg = global.get(\"cfg\");\n    cfg.new_network.gateway = msg.payload;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 740,
+        "wires": [
+            [
+                "0fcd25c90461ce53"
+            ]
+        ]
+    },
+    {
+        "id": "177594390f1ce99b",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "new primary_dns",
+        "func": "function isValidIPv4(ip) {\n    const ipv4Regex = /^(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)){3}$/;\n    return ipv4Regex.test(ip);\n}\n\nlet ivalid = isValidIPv4(msg.payload);\nif (!ivalid)\n{\n    msg.payload = `${msg.payload} is invalid IPv4`\n    return msg;\n}\nelse\n{\n    var cfg = global.get(\"cfg\");\n    cfg.new_network.primary_dns = msg.payload;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 800,
+        "wires": [
+            [
+                "0fcd25c90461ce53"
+            ]
+        ]
+    },
+    {
+        "id": "ebcf8bd8b125fee5",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "new second_dns",
+        "func": "function isValidIPv4(ip) {\n    const ipv4Regex = /^(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)(\\.(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)){3}$/;\n    return ipv4Regex.test(ip);\n}\n\nlet ivalid = isValidIPv4(msg.payload);\nif (!ivalid)\n{\n    msg.payload = `${msg.payload} is invalid IPv4`\n    return msg;\n}\nelse\n{\n    var cfg = global.get(\"cfg\");\n    cfg.new_network.second_dns = msg.payload;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 860,
+        "wires": [
+            [
+                "0fcd25c90461ce53"
+            ]
+        ]
+    },
+    {
+        "id": "753a3ba4e9a03f33",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "host",
+        "func": "msg.payload = global.get(\"cfg\").mqtt.host;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 940,
+        "wires": [
+            [
+                "15d14d0a2b154406"
+            ]
+        ]
+    },
+    {
+        "id": "e4641e5cddf3b93b",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "port",
+        "func": "msg.payload = global.get(\"cfg\").mqtt.port;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1000,
+        "wires": [
+            [
+                "c6a8b3f8a5926de1"
+            ]
+        ]
+    },
+    {
+        "id": "2c15d132dc6d7c3e",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "user",
+        "func": "msg.payload = global.get(\"cfg\").mqtt.user;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1060,
+        "wires": [
+            [
+                "b5afb24a727cffac"
+            ]
+        ]
+    },
+    {
+        "id": "2cd6593640750150",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "password",
+        "func": "msg.payload = global.get(\"cfg\").mqtt.password;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1120,
+        "wires": [
+            [
+                "8162dc92f967567a"
+            ]
+        ]
+    },
+    {
+        "id": "18f7c35ba0ba9d2e",
+        "type": "link out",
+        "z": "539c5e4ac9d976b6",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "22c6011c906fd246",
+            "6b703e5fc9fb8a54"
+        ],
+        "x": 975,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "22c6011c906fd246",
+        "type": "link in",
+        "z": "539c5e4ac9d976b6",
+        "name": "link in 2",
+        "links": [
+            "18f7c35ba0ba9d2e",
+            "556ceed1308950f0"
+        ],
+        "x": 365,
+        "y": 960,
+        "wires": [
+            [
+                "753a3ba4e9a03f33",
+                "e4641e5cddf3b93b",
+                "2c15d132dc6d7c3e",
+                "2cd6593640750150"
+            ]
+        ]
+    },
+    {
+        "id": "55fc8fb88e41e8d1",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "host",
+        "func": "global.get(\"cfg\").new_mqtt.host = msg.payload;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c732f4da0f809d1f",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "port",
+        "func": "global.get(\"cfg\").new_mqtt.port = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e32542d9f90303aa",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "user",
+        "func": "global.get(\"cfg\").new_mqtt.user = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa44ff1f259f3b8e",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "password",
+        "func": "global.get(\"cfg\").new_mqtt.password = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "14aa65c64032ee4e",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "button template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\": \"vng.iot.services.access.button.cloud.mqtt\",\n    \"id\": \"70:b3:d5:8d:88:20\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\": [],\n            \"servers\": [],\n            \"listeners\": [],\n            \"channels\": [\n                {\n                    \"id\": \"local_btn\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n                },\n                {\n                    \"id\": \"cloud_btn\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"{{payload.host}}\",\n                        \"port\": {{payload.port}},\n                        \"user\": \"{{payload.user}}\",\n                        \"password\": \"{{payload.password}}\"\n                    }\n                }\n            ],\n            \"publishers\": [\n                {\n                    \"id\": \"cloud_btn\",\n                    \"channel\": \"cloud_btn\",\n                    \"topic\": \"vng-cloud/devices/access_button/request\"\n                }\n            ],\n            \"subscribers\": [\n                {\n                    \"id\": \"local_btn\",\n                    \"channel\": \"local_btn\",\n                    \"topic\": \"bluetooth.receive\"\n                }\n            ]\n        },\n        \"main\": {\n            \"subscriber\": \"local_btn\",\n            \"publisher\": \"cloud_btn\",\n            \"processor\": \"cloud\"\n        }\n    }\n}",
+        "output": "str",
+        "x": 550,
+        "y": 1240,
+        "wires": [
+            [
+                "bdebd329b59b8d33"
+            ]
+        ]
+    },
+    {
+        "id": "6c8338ccbb893eb2",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "door template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\" : \"vng.iot.services.access.door.mesh.cloud\",\n    \"id\": \"AA:BB:CC:DD:EE:FF\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\":[\n            ],\n\n            \"servers\": [\n            ],\n\n            \"listeners\": [\n            ],\n\n            \"channels\":[{\n                    \"id\": \"local\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n                }, {\n                    \"id\": \"cloud\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                }, {\n                    \"id\": \"cloud_response\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                }\n            ],\n\n            \"publishers\": [{\n                    \"id\": \"local\",\n                    \"channel\": \"local\",\n                    \"topic\": \"vng-local/devices/access_door\"\n                },{\n                    \"id\": \"cloud_response\",\n                    \"channel\": \"cloud_response\",\n                    \"topic\": \"vng-cloud/devices/access_door/response\"\n                }\n            ],\n\n            \"subscribers\": [{\n                    \"id\": \"cloud\",\n                    \"channel\": \"cloud\",\n                    \"topic\": \"vng-cloud/devices/access_door/command/%s\"\n                }\n            ]\n        },\n\n        \"main\": {\n            \"subscriber\": \"cloud\",\n            \"publisher\": \"local\",\n            \"publisher_response\": \"cloud_response\"\n        }\n    }\n}\n",
+        "output": "str",
+        "x": 540,
+        "y": 1180,
+        "wires": [
+            [
+                "0ec44e9878965f9c"
+            ]
+        ]
+    },
+    {
+        "id": "4fea2d038ecc4ca1",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "reader template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\" : \"vng.iot.services.access.reader.cloud.mqtt\",\n    \"id\": \"70:b3:d5:8d:88:20\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\":[],\n\n            \"servers\": [\n            ],\n\n            \"listeners\": [\n            ],\n\n            \"channels\":[{\n                    \"id\": \"local_btn\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n                },{\n                    \"id\": \"local_door\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                  }\n                },{\n                    \"id\": \"cloud_door\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                }\n            ],\n\n            \"publishers\": [{\n                    \"id\": \"local_door\",\n                    \"channel\": \"local_door\",\n                    \"topic\": \"bluetooth.transmit\"\n                },{\n                    \"id\": \"cloud_door\",\n                    \"channel\": \"cloud_door\",\n                    \"topic\": \"vng-cloud/devices/access_reader/request\"\n                }\n            ],\n\n            \"subscribers\": [{\n                    \"id\": \"local_btn\",\n                    \"channel\": \"local_btn\",\n                    \"topic\": \"bluetooth.receive\"\n                }\n            ]\n        },\n\n        \"main\": {\n            \"subscriber\":       \"local_btn\",\n            \"publisher\":        \"local_door\",\n            \"publisher_cloud\":  \"cloud_door\"\n        }\n    }\n}\n",
+        "output": "str",
+        "x": 550,
+        "y": 1300,
+        "wires": [
+            [
+                "cfe62967b27eb855"
+            ]
+        ]
+    },
+    {
+        "id": "17ca0768abfb1c19",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "button.status template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\": \"vng.iot.services.device.access.button.status.mesh\",\n    \"id\": \"70:b3:d5:8d:88:20\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\": [\n                {\n                    \"id\": \"cloud\",\n                    \"protocol\": \"HTTP\",\n                    \"settings\": {\n                        \"url\": \"https://gbcsyslog.zing.vn/logging\",\n                        \"method\": \"POST\"\n                    }\n                }\n            ],\n            \"servers\": [],\n            \"listeners\": [],\n            \"channels\": [\n                {\n                    \"id\": \"local_status\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n                },\n                {\n                    \"id\": \"cloud_publish\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"{{payload.host}}\",\n                        \"port\": {{payload.port}},\n                        \"user\": \"{{payload.user}}\",\n                        \"password\": \"{{payload.password}}\"\n                    }\n                }\n            ],\n            \"publishers\": [\n                {\n                    \"id\": \"cloud_publish\",\n                    \"channel\": \"cloud_publish\",\n                    \"topic\": \"vng-cloud/device/status/button\"\n                }\n            ],\n            \"subscribers\": [\n                {\n                    \"id\": \"local_status\",\n                    \"channel\": \"local_status\",\n                    \"topic\": \"bluetooth.receive\"\n                }\n            ]\n        },\n        \"main\": {\n            \"subscriber\": \"local_status\",\n            \"publisher\": \"cloud_publish\",\n            \"processor\": \"cloud\"\n        }\n    }\n}",
+        "output": "str",
+        "x": 570,
+        "y": 1360,
+        "wires": [
+            [
+                "8950317660a3a054"
+            ]
+        ]
+    },
+    {
+        "id": "bbea7dacb8d5611c",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "door.status template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\" : \"vng.iot.services.device.access.door.status.mesh\",\n    \"id\": \"70:b3:d5:8d:88:20\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\":[{\n                    \"id\": \"cloud\",\n                    \"protocol\": \"HTTP\",\n                    \"settings\": {\n                        \"url\": \"https://gbcsyslog.zing.vn/logging\",\n                        \"method\": \"POST\"\n                    }\n                }\n            ],\n\n            \"servers\": [\n            ],\n\n            \"listeners\": [\n            ],\n\n            \"channels\":[{\n                    \"id\": \"local_status\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n\n                },\n                {\n                    \"id\": \"cloud_publish\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                }\n            ],\n\n            \"publishers\": [{\n                    \"id\": \"cloud_publish\",\n                    \"channel\": \"cloud_publish\",\n                    \"topic\": \"vng-cloud/device/status/door\"\n                }\n            ],\n\n            \"subscribers\": [{\n                    \"id\": \"local_status\",\n                    \"channel\": \"local_status\",\n                    \"topic\": \"bluetooth.receive\"\n                }\n            ]\n        },\n\n        \"main\": {\n            \"subscriber\": \"local_status\",\n            \"publisher\": \"cloud_publish\",\n            \"processor\": \"cloud\"\n        }\n    }\n}\n",
+        "output": "str",
+        "x": 570,
+        "y": 1420,
+        "wires": [
+            [
+                "466ab1a20be9c842"
+            ]
+        ]
+    },
+    {
+        "id": "2495c0eac55d9279",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "reader.status template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\": \"vng.iot.services.device.access.reader.status.mesh\",\n    \"id\": \"70:b3:d5:8d:88:20\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\": [\n                {\n                    \"id\": \"cloud\",\n                    \"protocol\": \"HTTP\",\n                    \"settings\": {\n                        \"url\": \"https://gbcsyslog.zing.vn/logging\",\n                        \"method\": \"POST\"\n                    }\n                }\n            ],\n            \"servers\": [],\n            \"listeners\": [],\n            \"channels\": [\n                {\n                    \"id\": \"local_status\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n                },\n                {\n                    \"id\": \"cloud_publish\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"{{payload.host}}\",\n                        \"port\": {{payload.port}},\n                        \"user\": \"{{payload.user}}\",\n                        \"password\": \"{{payload.password}}\"\n                    }\n                }\n            ],\n            \"publishers\": [\n                {\n                    \"id\": \"cloud_publish\",\n                    \"channel\": \"cloud_publish\",\n                    \"topic\": \"vng-cloud/device/status/reader\"\n                }\n            ],\n            \"subscribers\": [\n                {\n                    \"id\": \"local_status\",\n                    \"channel\": \"local_status\",\n                    \"topic\": \"bluetooth.receive\"\n                }\n            ]\n        },\n        \"main\": {\n            \"subscriber\": \"local_status\",\n            \"publisher\": \"cloud_publish\",\n            \"processor\": \"cloud\"\n        }\n    }\n}",
+        "output": "str",
+        "x": 570,
+        "y": 1480,
+        "wires": [
+            [
+                "a96f4f6ebca99df3"
+            ]
+        ]
+    },
+    {
+        "id": "4e34f28a85b774d9",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "gateway.status template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\": \"vng.iot.services.device.gateway.status\",\n    \"id\": \"70:b3:d5:8d:88:20\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\": [],\n            \"servers\": [],\n            \"listeners\": [],\n            \"channels\": [\n                {\n                    \"id\": \"cloud_update_status\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"{{payload.host}}\",\n                        \"port\": {{payload.port}},\n                        \"user\": \"{{payload.user}}\",\n                        \"password\": \"{{payload.password}}\"\n                    }\n                },\n                {\n                    \"id\": \"cloud_publish_status\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"mqtt-customer.prism.vn\",\n                        \"port\": 1886,\n                        \"user\": \"mqttM1t3kBridge\",\n                        \"password\": \"mqttM1t3kBridge\"\n                    }\n                }\n            ],\n            \"publishers\": [\n                {\n                    \"id\": \"cloud_publish_status\",\n                    \"channel\": \"cloud_publish_status\",\n                    \"topic\": \"vng-cloud/devices/gateway/status\"\n                }\n            ],\n            \"subscribers\": [\n                {\n                    \"id\": \"cloud_update_status\",\n                    \"channel\": \"cloud_update_status\",\n                    \"topic\": \"vng-cloud/devices/70:b3:d5:8d:89:ff/update_version/gateway\"\n                }\n            ]\n        },\n        \"main\": {\n            \"subscriber\": \"cloud_update_status\",\n            \"publisher\": \"cloud_publish_status\",\n            \"max_period_ms\": 6000,\n            \"min_period_ms\": 3000\n        }\n    }\n}",
+        "output": "str",
+        "x": 580,
+        "y": 1540,
+        "wires": [
+            [
+                "fa7dc0a722dffa10"
+            ]
+        ]
+    },
+    {
+        "id": "b2ee8821cacd851c",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "light.hub.group.config",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\" : \"services.light.hub.group.config.mesh\",\n    \"id\": \"AA:BB:CC:DD:EE:FF\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\":[\n            ],\n\n            \"servers\": [\n            ],\n\n            \"listeners\": [\n            ],\n\n            \"channels\":[{\n                    \"id\": \"local\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n                }, {\n                    \"id\": \"cloud\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                },{\n                    \"id\": \"cloud_hub\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                }\n            ],\n\n            \"publishers\": [{\n                    \"id\": \"local\",\n                    \"channel\": \"local\",\n                    \"topic\": \"bluetooth.transmit\"\n                }\n            ],\n\n            \"subscribers\": [{\n                    \"id\": \"cloud\",\n                    \"channel\": \"cloud\",\n                    \"topic\": \"vng-cloud/devices/%s/update_config/lighthub_port\"\n                },\n                {\n                    \"id\": \"cloud_hub\",\n                    \"channel\": \"cloud_hub\",\n                    \"topic\": \"vng-cloud/devices/%s/update_config/lighthub\"\n                }\n            ]\n        },\n\n        \"main\": {\n            \"subscriber\": \"cloud\",\n            \"subscriber_hub\": \"cloud_hub\",\n            \"publisher\": \"local\"\n        }\n    }\n}\n",
+        "output": "str",
+        "x": 570,
+        "y": 1600,
+        "wires": [
+            [
+                "0ccf05a5e7fb0e88"
+            ]
+        ]
+    },
+    {
+        "id": "d0a8d298839497c1",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "light.hub.group.mesh",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\" : \"services.light.hub.group.mesh\",\n    \"id\": \"AA:BB:CC:DD:EE:FF\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\":[\n            ],\n\n            \"servers\": [\n            ],\n\n            \"listeners\": [\n            ],\n\n            \"channels\":[{\n                    \"id\": \"local\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n                }, {\n                    \"id\": \"cloud_status\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                }, {\n                    \"id\": \"cloud\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                }\n            ],\n\n            \"publishers\": [{\n                    \"id\": \"local\",\n                    \"channel\": \"local\",\n                    \"topic\": \"bluetooth.transmit\"\n                },\n                {\n                    \"id\": \"cloud_status\",\n                    \"channel\": \"cloud_status\",\n                    \"topic\": \"device.light.mesh.status\"\n                }\n            ],\n\n            \"subscribers\": [{\n                    \"id\": \"cloud\",\n                    \"channel\": \"cloud\",\n                    \"topic\": \"vng-cloud/devices/%s/switch_on_off/request\"\n                }\n            ]\n        },\n\n        \"main\": {\n            \"subscriber\": \"cloud\",\n            \"publisher\": \"local\",\n            \"publisher_status\": \"cloud_status\"\n\n        }\n    }\n}\n",
+        "output": "str",
+        "x": 570,
+        "y": 1660,
+        "wires": [
+            [
+                "127b3c6c66eebc60"
+            ]
+        ]
+    },
+    {
+        "id": "e6e51eaa272c8f32",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "light.hub.mesh",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\" : \"services.light.hub.mesh\",\n    \"id\": \"AA:BB:CC:DD:EE:FF\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\":[\n            ],\n\n            \"servers\": [\n            ],\n\n            \"listeners\": [\n            ],\n\n            \"channels\":[{\n                    \"id\": \"local\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n                },{\n                    \"id\": \"cloud\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                },{\n                    \"id\": \"cloud_response\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                }\n            ],\n\n            \"publishers\": [{\n                    \"id\": \"local\",\n                    \"channel\": \"local\",\n                    \"topic\": \"bluetooth.transmit\"\n                },\n                {\n                    \"id\": \"cloud_response\",\n                    \"channel\": \"cloud_response\",\n                    \"topic\": \"vng-cloud/devices/switch_on_off/response\"\n                }\n            ],\n\n            \"subscribers\": [{\n                    \"id\": \"cloud\",\n                    \"channel\": \"cloud\",\n                    \"topic\": \"vng-cloud/devices/%s/switch_on_off/request\"\n                }\n            ]\n        },\n\n        \"main\": {\n            \"subscriber\": \"cloud\",\n            \"publisher\": \"local\",\n            \"publisher_response\": \"cloud_response\"\n        }\n    }\n}\n",
+        "output": "str",
+        "x": 550,
+        "y": 1720,
+        "wires": [
+            [
+                "6891400ee7b22dd0"
+            ]
+        ]
+    },
+    {
+        "id": "8354e5465c1625c1",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "light.hub.scaling.config",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"name\" : \"services.light.hub.scaling.config.mesh\",\n    \"id\": \"AA:BB:CC:DD:EE:FF\",\n    \"synchronize\": {\n        \"events\": 256,\n        \"timeout\": -1\n    },\n    \"settings\": {\n        \"net\": {\n            \"processors\":[\n            ],\n\n            \"servers\": [\n            ],\n\n            \"listeners\": [\n            ],\n\n            \"channels\":[{\n                    \"id\": \"local\",\n                    \"protocol\": \"MQTT\",\n                    \"settings\": {\n                        \"host\": \"localhost\",\n                        \"port\": 1883\n                    }\n                },{\n                    \"id\": \"cloud\",\n                    \"protocol\": \"MQTT\",\n\t\t    \"settings\": {\n\t\t\t\"host\": \"{{payload.host}}\",\n\t\t\t\"port\": {{payload.port}},\n\t\t\t\"user\": \"{{payload.user}}\",\n\t\t\t\"password\": \"{{payload.password}}\"\n\t\t    }\n                }\n            ],\n\n            \"publishers\": [{\n                    \"id\": \"local\",\n                    \"channel\": \"local\",\n                    \"topic\": \"bluetooth.transmit\"\n                }\n            ],\n\n            \"subscribers\": [{\n                    \"id\": \"cloud\",\n                    \"channel\": \"cloud\",\n                    \"topic\": \"vng-cloud/devices/relay_config/%s\"\n                }\n            ]\n        },\n\n        \"main\": {\n            \"subscriber\": \"cloud\",\n            \"publisher\": \"local\"\n        }\n    }\n}\n",
+        "output": "str",
+        "x": 570,
+        "y": 1780,
+        "wires": [
+            [
+                "5bc3fc39067ad172"
+            ]
+        ]
+    },
+    {
+        "id": "3c4c179ca94a97de",
+        "type": "inject",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1380,
+        "wires": [
+            [
+                "f9638eb3e147f1bf"
+            ]
+        ]
+    },
+    {
+        "id": "f9638eb3e147f1bf",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "Loading new MQTT",
+        "func": "msg.payload = global.get(\"cfg\").mqtt;\nnode.warn(msg.payload);\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1320,
+        "wires": [
+            [
+                "6c8338ccbb893eb2",
+                "14aa65c64032ee4e",
+                "4fea2d038ecc4ca1",
+                "17ca0768abfb1c19",
+                "bbea7dacb8d5611c",
+                "2495c0eac55d9279",
+                "4e34f28a85b774d9",
+                "b2ee8821cacd851c",
+                "d0a8d298839497c1",
+                "e6e51eaa272c8f32",
+                "8354e5465c1625c1",
+                "8eb0d8036e5bc13e"
+            ]
+        ]
+    },
+    {
+        "id": "0ec44e9878965f9c",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "door.mesh.cloud.json",
+        "filename": "/etc/vng/services/access/door.mesh.cloud.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 810,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdebd329b59b8d33",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "button.mesh.cloud.mqtt.json",
+        "filename": "/etc/vng/services/access/button.mesh.cloud.mqtt.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 830,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cfe62967b27eb855",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "reader.mesh.cloud.mqtt.json",
+        "filename": "/etc/vng/services/access/reader.mesh.cloud.mqtt.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 830,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8950317660a3a054",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "access.button.status.mesh.json",
+        "filename": "/etc/vng/services/device/access.button.status.mesh.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 840,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "127b3c6c66eebc60",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "light.hub.group.mesh.json",
+        "filename": "/etc/vng/services/light/light.hub.group.mesh.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 820,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "466ab1a20be9c842",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "access.button.status.mesh.json",
+        "filename": "/etc/vng/services/device/access.button.status.mesh.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 840,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a96f4f6ebca99df3",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "access.reader.status.mesh.json",
+        "filename": "/etc/vng/services/device/access.reader.status.mesh.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 840,
+        "y": 1480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa7dc0a722dffa10",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "device.gateway.status.json",
+        "filename": "/etc/vng/services/device/device.gateway.status.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 830,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6891400ee7b22dd0",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "light.hub.mesh.json",
+        "filename": "/etc/vng/services/light/light.hub.mesh.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 800,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5bc3fc39067ad172",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "light.hub.scaling.config.mesh.json",
+        "filename": "/etc/vng/services/light/light.hub.scaling.config.mesh.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 850,
+        "y": 1780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ccf05a5e7fb0e88",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "light.hub.group.config.mesh.json",
+        "filename": "/etc/vng/services/light/light.hub.group.config.mesh.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 840,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "77912be8fca0c73d",
+        "type": "inject",
+        "z": "539c5e4ac9d976b6",
+        "d": true,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 1840,
+        "wires": [
+            [
+                "a27afa19228dee9a"
+            ]
+        ]
+    },
+    {
+        "id": "d1e79254874e285d",
+        "type": "rpi-gpio out",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "pin": "8",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 720,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "e188650b22d4a78d",
+        "type": "inject",
+        "z": "539c5e4ac9d976b6",
+        "name": "Timer",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 2000,
+        "wires": [
+            [
+                "a00be1e3721ccd95"
+            ]
+        ]
+    },
+    {
+        "id": "a00be1e3721ccd95",
+        "type": "trigger",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "1",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 520,
+        "y": 2000,
+        "wires": [
+            [
+                "d1e79254874e285d"
+            ]
+        ]
+    },
+    {
+        "id": "8eb0d8036e5bc13e",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "noti",
+        "func": "msg.payload = \"Saved successfully\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 1400,
+        "wires": [
+            [
+                "f0a4d885ae6d358e"
+            ]
+        ]
+    },
+    {
+        "id": "842d9e59406abe11",
+        "type": "ui_button",
+        "z": "539c5e4ac9d976b6",
+        "name": "Submit",
+        "group": "a3c8e60dd497c90d",
+        "order": 15,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Submit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 460,
+        "wires": [
+            [
+                "9163fb615ef291b8"
+            ]
+        ]
+    },
+    {
+        "id": "88692d185b68b433",
+        "type": "ui_text_input",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "label": "Address",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 690,
+        "y": 620,
+        "wires": [
+            [
+                "136386540ca0d24a"
+            ]
+        ]
+    },
+    {
+        "id": "febca4478b12e5f5",
+        "type": "ui_text_input",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "label": "Netmask",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 690,
+        "y": 680,
+        "wires": [
+            [
+                "36f1066b26eb9e0e"
+            ]
+        ]
+    },
+    {
+        "id": "72ebb0f20de0fc4d",
+        "type": "ui_text_input",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "label": "Gateway",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 690,
+        "y": 740,
+        "wires": [
+            [
+                "a1b19c731b52f784"
+            ]
+        ]
+    },
+    {
+        "id": "7afe1d6a26484793",
+        "type": "ui_text_input",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "label": "Primary DNS",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 700,
+        "y": 800,
+        "wires": [
+            [
+                "177594390f1ce99b"
+            ]
+        ]
+    },
+    {
+        "id": "3010c6f9cc5c971e",
+        "type": "ui_text_input",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "label": "Second DNS",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 700,
+        "y": 860,
+        "wires": [
+            [
+                "ebcf8bd8b125fee5"
+            ]
+        ]
+    },
+    {
+        "id": "8162dc92f967567a",
+        "type": "ui_text_input",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "label": "Password",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "password",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 700,
+        "y": 1120,
+        "wires": [
+            [
+                "aa44ff1f259f3b8e"
+            ]
+        ]
+    },
+    {
+        "id": "15d14d0a2b154406",
+        "type": "ui_text_input",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "label": "Host",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 690,
+        "y": 940,
+        "wires": [
+            [
+                "55fc8fb88e41e8d1"
+            ]
+        ]
+    },
+    {
+        "id": "c6a8b3f8a5926de1",
+        "type": "ui_text_input",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "label": "Port",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 9,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 690,
+        "y": 1000,
+        "wires": [
+            [
+                "c732f4da0f809d1f"
+            ]
+        ]
+    },
+    {
+        "id": "b5afb24a727cffac",
+        "type": "ui_text_input",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "label": "User",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 10,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 690,
+        "y": 1060,
+        "wires": [
+            [
+                "e32542d9f90303aa"
+            ]
+        ]
+    },
+    {
+        "id": "0fcd25c90461ce53",
+        "type": "ui_toast",
+        "z": "539c5e4ac9d976b6",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1130,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f0a4d885ae6d358e",
+        "type": "ui_toast",
+        "z": "539c5e4ac9d976b6",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 310,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "1ba5ed6289fc68ef",
+        "type": "json",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 670,
+        "y": 200,
+        "wires": [
+            [
+                "b09fa9ca7843c554"
+            ]
+        ]
+    },
+    {
+        "id": "b09fa9ca7843c554",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "load config",
+        "func": "node.warn(msg.payload);\nglobal.set(\"cfg\", msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 200,
+        "wires": [
+            [
+                "18f7c35ba0ba9d2e"
+            ]
+        ]
+    },
+    {
+        "id": "bd4af4f3c78479c3",
+        "type": "debug",
+        "z": "539c5e4ac9d976b6",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "084cadd5b665fa16",
+        "type": "file",
+        "z": "539c5e4ac9d976b6",
+        "name": "config.json",
+        "filename": "/home/admin/config_gw/config.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 970,
+        "y": 280,
+        "wires": [
+            [
+                "bd4af4f3c78479c3"
+            ]
+        ]
+    },
+    {
+        "id": "bce0deb76c75038f",
+        "type": "exec",
+        "z": "539c5e4ac9d976b6",
+        "command": "cat /home/admin/config_gw/config.json",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "1ba5ed6289fc68ef"
+            ],
+            [
+                "29e8f6cde3202db5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "29e8f6cde3202db5",
+        "type": "template",
+        "z": "539c5e4ac9d976b6",
+        "name": "Config Template",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "mustache",
+        "template": "{\n    \"hostap\" : true,\n    \"new_hostap\": true,\n    \"changed\":{\n        \"hostap\": false,\n        \"mqtt\": false,\n        \"network\": false\n    },\n    \"mqtt\" : {\n        \"host\":\"mqtt-customer.prism.vn\",\n        \"port\":\"1886\",\n        \"user\":\"mqttM1t3kBridge\",\n        \"password\": \"mqttM1t3kBridge\"\n    },\n    \"new_mqtt\": {\n        \"host\": \"mqtt-customer.prism.vn\",\n        \"port\": \"1886\",\n        \"user\": \"mqttM1t3kBridge\",\n        \"password\": \"mqttM1t3kBridge\"\n    },\n    \"dns\": [\"8.8.8.8\", \"8.8.4.4\"],\n    \"network\": {\n        \"address\": \"192.168.22.12\",\n        \"netmask\": \"255.255.255.0\",\n        \"gateway\": \"192.168.22.1\",\n        \"primary_dns\": \"8.8.8.8\",\n        \"second_dns\": \"8.8.4.4\"\n    },\n    \"new_network\": {\n        \"address\": \"192.168.22.12\",\n        \"netmask\": \"255.255.255.0\",\n        \"gateway\": \"192.168.22.1\",\n        \"primary_dns\": \"8.8.8.8\",\n        \"second_dns\": \"8.8.4.4\"\n    }\n}",
+        "output": "json",
+        "x": 680,
+        "y": 260,
+        "wires": [
+            [
+                "084cadd5b665fa16",
+                "b09fa9ca7843c554"
+            ]
+        ]
+    },
+    {
+        "id": "40a98e65ad0ccc90",
+        "type": "ui_button",
+        "z": "539c5e4ac9d976b6",
+        "name": "Revert",
+        "group": "a3c8e60dd497c90d",
+        "order": 16,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Revert",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "556ceed1308950f0"
+            ]
+        ]
+    },
+    {
+        "id": "f6d4ebd89acfa228",
+        "type": "link in",
+        "z": "539c5e4ac9d976b6",
+        "name": "link in 4",
+        "links": [
+            "d456546714343e2f"
+        ],
+        "x": 585,
+        "y": 300,
+        "wires": [
+            [
+                "e950271cda7cb14a"
+            ]
+        ]
+    },
+    {
+        "id": "57d82b5afb7d6ee7",
+        "type": "ui_text",
+        "z": "539c5e4ac9d976b6",
+        "group": "a3c8e60dd497c90d",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Network",
+        "label": "Network",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 540,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c4c97b2ac8025d85",
+        "type": "ui_text",
+        "z": "539c5e4ac9d976b6",
+        "group": "a3c8e60dd497c90d",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "name": "MQTT",
+        "label": "MQTT",
+        "format": "User Credentials",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 250,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "38beab69176d6820",
+        "type": "ui_text",
+        "z": "539c5e4ac9d976b6",
+        "d": true,
+        "group": "a3c8e60dd497c90d",
+        "order": 12,
+        "width": 6,
+        "height": 1,
+        "name": "HostAP",
+        "label": "",
+        "format": "HostAP",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 300,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "6f7c9dbb77a942fe",
+        "type": "ui_switch",
+        "z": "539c5e4ac9d976b6",
+        "d": true,
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "a3c8e60dd497c90d",
+        "order": 13,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 730,
+        "y": 1900,
+        "wires": [
+            [
+                "0ea1fe604ffc77cd"
+            ]
+        ]
+    },
+    {
+        "id": "a27afa19228dee9a",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "d": true,
+        "name": "Loading new MQTT",
+        "func": "var cfg = global.get(\"cfg\");\nmsg.payload = cfg.hostap;\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1900,
+        "wires": [
+            [
+                "6f7c9dbb77a942fe"
+            ]
+        ]
+    },
+    {
+        "id": "6b703e5fc9fb8a54",
+        "type": "link in",
+        "z": "539c5e4ac9d976b6",
+        "name": "link in 5",
+        "links": [
+            "18f7c35ba0ba9d2e"
+        ],
+        "x": 405,
+        "y": 1900,
+        "wires": [
+            [
+                "a27afa19228dee9a"
+            ]
+        ]
+    },
+    {
+        "id": "0ea1fe604ffc77cd",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "d": true,
+        "name": "Loading new MQTT",
+        "func": "var cfg = global.get(\"cfg\");\ncfg.new_hostap = msg.payload;\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9163fb615ef291b8",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "save config",
+        "func": "var cfg = global.get(\"cfg\");\nnode.warn(cfg);\n\nif (JSON.stringify(cfg.network) !== JSON.stringify(cfg.new_network)) {\n    cfg.changed.network = true;\n    node.warn(\"alo mo to\");\n    cfg.network = { ...cfg.new_network }; // copy object\n}\n\n// So sánh nội dung JSON\nif (JSON.stringify(cfg.mqtt) !== JSON.stringify(cfg.new_mqtt)) {\n    cfg.changed.mqtt = true;\n    cfg.mqtt = { ...cfg.new_mqtt }; // copy object\n}\n\nif (JSON.stringify(cfg.hostap) !== JSON.stringify(cfg.new_hostap)) {\n    cfg.changed.hostap = true;\n    cfg.hostap = { ...cfg.new_hostap };\n}\n\nreturn [{ payload: cfg.network }, { payload: cfg }];\n\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 460,
+        "wires": [
+            [
+                "64e9c20638c5e771"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d456546714343e2f",
+        "type": "link out",
+        "z": "539c5e4ac9d976b6",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "f6d4ebd89acfa228",
+            "9a2774a37dd2d141"
+        ],
+        "x": 1135,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b9ef112b5a49d43d",
+        "type": "debug",
+        "z": "539c5e4ac9d976b6",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "cee0953051d62263",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "cmd network",
+        "func": "var cfg = global.get(\"cfg\");\n\nvar cmd_hostap = \"\";\nif (cfg.hostap) {\n    cmd_hostap = \"sudo systemctl enable create_wlan0_ap.service;\\\n                   sudo systemctl start create_wlan0_ap.service;\";\n}\nelse {\n    cmd_hostap = \"sudo iw dev wlan0-ap del;\\\n            sudo systemctl disable create_wlan0_ap.service;\";\n}\nvar cmd_network = \"sudo cp /etc/network/interfaces /etc/network/interfaces.bak; \\\n               sudo cp /home/admin/config_gw/interfaces /etc/network/interfaces;\\\n               sudo systemctl restart networking.service;\\\n               sudo systemctl status networking.service;\"\n\nmsg.payload = `${cmd_network}\n                ${cmd_hostap}\n                sleep 5\\\n                sudo reboot`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e950271cda7cb14a",
+        "type": "function",
+        "z": "539c5e4ac9d976b6",
+        "name": "save config",
+        "func": "\nvar cfg = global.get(\"cfg\");\nreturn { payload: cfg };\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 300,
+        "wires": [
+            [
+                "084cadd5b665fa16"
+            ]
+        ]
+    },
+    {
+        "id": "104240ca68736365",
+        "type": "delay",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1160,
+        "y": 480,
+        "wires": [
+            [
+                "20fc27fe644d194c"
+            ]
+        ]
+    },
+    {
+        "id": "556ceed1308950f0",
+        "type": "link out",
+        "z": "539c5e4ac9d976b6",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "baefb88374c22a87",
+            "22c6011c906fd246"
+        ],
+        "x": 255,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f3bfb3288dc3d285",
+        "type": "inject",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 540,
+        "wires": [
+            [
+                "9163fb615ef291b8"
+            ]
+        ]
+    },
+    {
+        "id": "52dd5fe1d8759b2e",
+        "type": "delay",
+        "z": "539c5e4ac9d976b6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "5d37f3e8ddee8c7d"
+            ]
+        ]
+    },
+    {
+        "id": "9a2774a37dd2d141",
+        "type": "link in",
+        "z": "539c5e4ac9d976b6",
+        "name": "link in 3",
+        "links": [
+            "d456546714343e2f"
+        ],
+        "x": 175,
+        "y": 1280,
+        "wires": [
+            [
+                "f9638eb3e147f1bf"
+            ]
+        ]
+    },
+    {
+        "id": "5ec27bb1832365c2",
+        "type": "exec",
+        "z": "539c5e4ac9d976b6",
+        "command": "cat /sys/class/net/eth0/address",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 270,
+        "y": 140,
+        "wires": [
+            [
+                "57d82b5afb7d6ee7"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f427733cc5e7af72",
+        "type": "exec",
+        "z": "5491aebc95f3be73",
         "command": "systemctl list-units --type=service --all | grep vng",
         "addpay": "",
         "append": "",
@@ -23,18 +2337,18 @@
         "y": 340,
         "wires": [
             [
-                "4ba0e95ceaee534a"
+                "3a26e48f65ab9f01"
             ],
             [],
             []
         ]
     },
     {
-        "id": "4ba0e95ceaee534a",
+        "id": "3a26e48f65ab9f01",
         "type": "function",
-        "z": "3f36dd3c63123d9b",
+        "z": "5491aebc95f3be73",
         "name": "function 6",
-        "func": "let lines = msg.payload.trim().split(\"\\n\");\nlet data = [];\nlines.forEach(line => {\n    let parts = line.trim().split(/\\s+/);\n    // Tách thành 5 cột: NAME, LOAD, ACTIVE, SUB, DESCRIPTION\n    let name = parts[0];\n    let load = parts[1];\n    let active = parts[2];\n    let sub = parts[3];\n    let description = parts.slice(4).join(\" \");\n\n    data.push({\n        name,\n        load,\n        active,\n        sub,\n        description\n    });\n});\n\nmsg.payload = data;\nreturn msg;",
+        "func": "let lines = msg.payload.trim().split(\"\\n\");\nlet data = [];\n\nlines.forEach(line => {\n    let parts = line.trim().split(/\\s+/);\n    // Tách thành 5 cột: NAME, LOAD, ACTIVE, SUB, DESCRIPTION\n    let name = parts[0];\n    let load = parts[1];\n    let active = parts[2];\n    let sub = parts[3];\n    let description = parts.slice(4).join(\" \");\n\n    data.push({\n        name,\n        load,\n        active,\n        sub,\n        description\n    });\n});\n\nmsg.payload = data;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -45,14 +2359,14 @@
         "y": 340,
         "wires": [
             [
-                "c6d3c3c0fd5de078"
+                "4a2b67f21546e39b"
             ]
         ]
     },
     {
-        "id": "c6d3c3c0fd5de078",
+        "id": "4a2b67f21546e39b",
         "type": "ui_template",
-        "z": "3f36dd3c63123d9b",
+        "z": "5491aebc95f3be73",
         "group": "104ea9557d862a45",
         "name": "",
         "order": 1,
@@ -71,9 +2385,9 @@
         ]
     },
     {
-        "id": "69002989829b112f",
+        "id": "834be7e9f657c6bb",
         "type": "inject",
-        "z": "3f36dd3c63123d9b",
+        "z": "5491aebc95f3be73",
         "name": "",
         "props": [
             {
@@ -95,14 +2409,14 @@
         "y": 300,
         "wires": [
             [
-                "8565d64f4aa2d919"
+                "f427733cc5e7af72"
             ]
         ]
     },
     {
-        "id": "6a66210a68361ae5",
+        "id": "6bc3baac18988530",
         "type": "ui_button",
-        "z": "3f36dd3c63123d9b",
+        "z": "5491aebc95f3be73",
         "name": "Reload",
         "group": "104ea9557d862a45",
         "order": 2,
@@ -123,36 +2437,1090 @@
         "y": 380,
         "wires": [
             [
-                "8565d64f4aa2d919"
+                "f427733cc5e7af72"
             ]
         ]
     },
     {
-        "id": "104ea9557d862a45",
-        "type": "ui_group",
-        "name": "Mesh",
-        "tab": "f1acd3cc7c7da9a2",
+        "id": "69553b09ef682480",
+        "type": "ui_button",
+        "z": "3f94d6302a0424e7",
+        "name": "Start",
+        "group": "e454f5153a277a7a",
         "order": 1,
-        "disp": true,
-        "width": 12,
-        "collapse": false,
-        "className": ""
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "038069bb8f704787"
+            ]
+        ]
     },
     {
-        "id": "f1acd3cc7c7da9a2",
-        "type": "ui_tab",
-        "name": "Services Mesh",
-        "icon": "dashboard",
+        "id": "0490feb613d28e5a",
+        "type": "function",
+        "z": "3f94d6302a0424e7",
+        "name": "function 1",
+        "func": "var  debug =  global.get(\"mqtt_debug\");\n\nif (debug == true)\n{\n    msg.payload = `${new Date().toLocaleString()}-[${msg.topic}]-${msg.payload}<br>`\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 200,
+        "wires": [
+            [
+                "04b0b5ebd031c28b"
+            ]
+        ]
+    },
+    {
+        "id": "04b0b5ebd031c28b",
+        "type": "file",
+        "z": "3f94d6302a0424e7",
+        "name": "",
+        "filename": "/home/admin/config_gw/log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 710,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5cccd4a4f901bb42",
+        "type": "ui_button",
+        "z": "3f94d6302a0424e7",
+        "name": "Stop",
+        "group": "e454f5153a277a7a",
         "order": 2,
-        "disabled": false,
-        "hidden": false
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 480,
+        "wires": [
+            [
+                "50e868d228466b22"
+            ]
+        ]
     },
     {
-        "id": "66326d489c70291d",
+        "id": "adcf7326d232f109",
+        "type": "file",
+        "z": "3f94d6302a0424e7",
+        "name": "",
+        "filename": "/home/admin/config_gw/log.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 970,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "038069bb8f704787",
+        "type": "function",
+        "z": "3f94d6302a0424e7",
+        "name": "function 2",
+        "func": "global.set(\"mqtt_debug\", true);\nmsg.payload = \"Debug Start!\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 340,
+        "wires": [
+            [
+                "827df8bfea8e8133",
+                "c668df6b58062bb5",
+                "40d2097091fb04ed"
+            ]
+        ]
+    },
+    {
+        "id": "50e868d228466b22",
+        "type": "function",
+        "z": "3f94d6302a0424e7",
+        "name": "function 3",
+        "func": "global.set(\"mqtt_debug\", false);\nmsg.payload = \"Debug Stop!\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 480,
+        "wires": [
+            [
+                "c668df6b58062bb5"
+            ]
+        ]
+    },
+    {
+        "id": "827df8bfea8e8133",
+        "type": "delay",
+        "z": "3f94d6302a0424e7",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 420,
+        "wires": [
+            [
+                "50e868d228466b22"
+            ]
+        ]
+    },
+    {
+        "id": "fb8e9cd6a4432747",
+        "type": "debug",
+        "z": "3f94d6302a0424e7",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "94f3fb243fab42cc",
+        "type": "inject",
+        "z": "3f94d6302a0424e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "59a9dd9e4160a805"
+            ]
+        ]
+    },
+    {
+        "id": "59a9dd9e4160a805",
+        "type": "function",
+        "z": "3f94d6302a0424e7",
+        "name": "function 4",
+        "func": "var  debug =  global.get(\"mqtt_debug\");\n\nif (debug == true)\n{\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 280,
+        "wires": [
+            [
+                "0c1f94dd87e9830d"
+            ]
+        ]
+    },
+    {
+        "id": "0c1f94dd87e9830d",
+        "type": "file in",
+        "z": "3f94d6302a0424e7",
+        "name": "",
+        "filename": "/home/admin/config_gw/log.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": true,
+        "x": 770,
+        "y": 280,
+        "wires": [
+            [
+                "fb8e9cd6a4432747",
+                "b37fc6cab0090679"
+            ]
+        ]
+    },
+    {
+        "id": "b37fc6cab0090679",
+        "type": "ui_template",
+        "z": "3f94d6302a0424e7",
+        "group": "e454f5153a277a7a",
+        "name": "",
+        "order": 4,
+        "width": 12,
+        "height": 12,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1120,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ca3c4cb1bfed41a",
+        "type": "mqtt in",
+        "z": "3f94d6302a0424e7",
+        "name": "",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f52f172b451c2709",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 200,
+        "wires": [
+            [
+                "0490feb613d28e5a"
+            ]
+        ]
+    },
+    {
+        "id": "c668df6b58062bb5",
+        "type": "ui_text",
+        "z": "3f94d6302a0424e7",
+        "group": "e454f5153a277a7a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8bb6b956451cb3aa",
+        "type": "inject",
+        "z": "3f94d6302a0424e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 100,
+        "wires": [
+            [
+                "45ce7b266b27a578"
+            ]
+        ]
+    },
+    {
+        "id": "45ce7b266b27a578",
+        "type": "mqtt out",
+        "z": "3f94d6302a0424e7",
+        "name": "",
+        "topic": "alo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f52f172b451c2709",
+        "x": 590,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "40d2097091fb04ed",
+        "type": "function",
+        "z": "3f94d6302a0424e7",
+        "name": "function 5",
+        "func": "global.set(\"mqtt_debug\", true);\nmsg.payload = \"...\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 340,
+        "wires": [
+            [
+                "b37fc6cab0090679",
+                "adcf7326d232f109"
+            ]
+        ]
+    },
+    {
+        "id": "390053c0bac7cdf0",
+        "type": "inject",
+        "z": "939c46d87dd12260",
+        "name": "update",
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 247,
+        "wires": [
+            [
+                "73a2ba050dc88fc3",
+                "eeee787441676ebd",
+                "64c91622861144bb",
+                "0f148970effb4ca5"
+            ]
+        ]
+    },
+    {
+        "id": "308a9ea6405562da",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.loadavg[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 549,
+        "y": 107,
+        "wires": [
+            [
+                "59c56ff49ed943f1"
+            ]
+        ]
+    },
+    {
+        "id": "98bcea1b0117b271",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.loadavg[1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 145,
+        "wires": [
+            [
+                "d857f371637a8d7a"
+            ]
+        ]
+    },
+    {
+        "id": "93b52cf033a0fc35",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.loadavg[2];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 549,
+        "y": 188,
+        "wires": [
+            [
+                "a5232b87812c35f9"
+            ]
+        ]
+    },
+    {
+        "id": "59c56ff49ed943f1",
+        "type": "ui_gauge",
+        "z": "939c46d87dd12260",
+        "name": "CPU Load 1",
+        "group": "f987673bee729608",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "1 Minute",
+        "label": "load",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "4",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 717,
+        "y": 106,
+        "wires": []
+    },
+    {
+        "id": "d857f371637a8d7a",
+        "type": "ui_gauge",
+        "z": "939c46d87dd12260",
+        "name": "CPU Load 2",
+        "group": "f987673bee729608",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "5 Minutes",
+        "label": "load",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "4",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 717,
+        "y": 147,
+        "wires": []
+    },
+    {
+        "id": "a5232b87812c35f9",
+        "type": "ui_gauge",
+        "z": "939c46d87dd12260",
+        "name": "CPU Load 3",
+        "group": "f987673bee729608",
+        "order": 4,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "15 Minutes",
+        "label": "load",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "4",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 715,
+        "y": 189,
+        "wires": []
+    },
+    {
+        "id": "cbf715f937607c5a",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.memusage;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 332,
+        "y": 701,
+        "wires": [
+            [
+                "615e2045c69d5a36"
+            ]
+        ]
+    },
+    {
+        "id": "615e2045c69d5a36",
+        "type": "ui_gauge",
+        "z": "939c46d87dd12260",
+        "name": "Memory Usage",
+        "group": "928d556347f4cc50",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "1 Minute",
+        "label": "Usage",
+        "format": "{{value | number:2}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 516,
+        "y": 705,
+        "wires": []
+    },
+    {
+        "id": "74e15a3d4e49ccc8",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "function formatBytes(bytes,decimals) {\n   if(bytes === 0) return '0 Byte';\n   var k = 1000; // or 1024 for binary\n   var dm = decimals + 1 || 3;\n   var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];\n   var i = Math.floor(Math.log(bytes) / Math.log(k));\n   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];\n}\n\nmsg.payload = formatBytes(msg.payload.totalmem);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 334,
+        "y": 744,
+        "wires": [
+            [
+                "5683b043daeda57f"
+            ]
+        ]
+    },
+    {
+        "id": "808d8aa5b92cb897",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "function formatBytes(bytes,decimals) {\n   if(bytes === 0) return '0 Byte';\n   var k = 1000; // or 1024 for binary\n   var dm = decimals + 1 || 3;\n   var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];\n   var i = Math.floor(Math.log(bytes) / Math.log(k));\n   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];\n}\n\nmsg.payload = formatBytes(msg.payload.freemem);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 332,
+        "y": 790,
+        "wires": [
+            [
+                "4bbe393311ce6ed3"
+            ]
+        ]
+    },
+    {
+        "id": "5683b043daeda57f",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "928d556347f4cc50",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Total Memory",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 515,
+        "y": 748,
+        "wires": []
+    },
+    {
+        "id": "4bbe393311ce6ed3",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "928d556347f4cc50",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Free Memory",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 519,
+        "y": 791,
+        "wires": []
+    },
+    {
+        "id": "e5af5febb321d71c",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "function timeConversion(millisec) {\n\n    var seconds = (millisec / 1000).toFixed(1);\n\n    var minutes = (millisec / (1000 * 60)).toFixed(1);\n\n    var hours = (millisec / (1000 * 60 * 60)).toFixed(1);\n\n    var days = (millisec / (1000 * 60 * 60 * 24)).toFixed(1);\n\n    if (seconds < 60) {\n        return seconds + \" Sec\";\n    } else if (minutes < 60) {\n        return minutes + \" Min\";\n    } else if (hours < 24) {\n        return hours + \" Hrs\";\n    } else {\n        return days + \" Days\"\n    }\n}\n\nmsg.payload = timeConversion(msg.payload.uptime * 1000);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 622,
+        "y": 355,
+        "wires": [
+            [
+                "5d8fa9e639df6a67"
+            ]
+        ]
+    },
+    {
+        "id": "5d8fa9e639df6a67",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "a345db098d4c0211",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Uptime",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 777,
+        "y": 354,
+        "wires": []
+    },
+    {
+        "id": "aa09957a7496ba74",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.hostname;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 621,
+        "y": 392,
+        "wires": [
+            [
+                "3f76824047c086f4"
+            ]
+        ]
+    },
+    {
+        "id": "3f76824047c086f4",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "a345db098d4c0211",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Hostname",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 789,
+        "y": 394,
+        "wires": []
+    },
+    {
+        "id": "e785204ca4540c61",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.platform;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 623,
+        "y": 430,
+        "wires": [
+            [
+                "a6f3647339abcedb"
+            ]
+        ]
+    },
+    {
+        "id": "a6f3647339abcedb",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "a345db098d4c0211",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Platform",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 785,
+        "y": 433,
+        "wires": []
+    },
+    {
+        "id": "add0978dbfb7411d",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.arch;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 624,
+        "y": 469,
+        "wires": [
+            [
+                "30dda813672ca019"
+            ]
+        ]
+    },
+    {
+        "id": "30dda813672ca019",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "a345db098d4c0211",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Arch",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 773,
+        "y": 473,
+        "wires": []
+    },
+    {
+        "id": "dd31eb7f1c662a06",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.release;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 625,
+        "y": 505,
+        "wires": [
+            [
+                "0ce374c2752f3df1"
+            ]
+        ]
+    },
+    {
+        "id": "0ce374c2752f3df1",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "a345db098d4c0211",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Release",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 785,
+        "y": 511,
+        "wires": []
+    },
+    {
+        "id": "cdbdd6e6945b2014",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.cpus[0].model;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 624,
+        "y": 546,
+        "wires": [
+            [
+                "0dd89cfe3186de4c",
+                "ce12c226fa24e4e7",
+                "00804c54cb126764",
+                "ee8180b0b7928a63"
+            ]
+        ]
+    },
+    {
+        "id": "0dd89cfe3186de4c",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "a345db098d4c0211",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "CPU 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 776,
+        "y": 554,
+        "wires": []
+    },
+    {
+        "id": "ce12c226fa24e4e7",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "a345db098d4c0211",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "CPU 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 778,
+        "y": 593,
+        "wires": []
+    },
+    {
+        "id": "00804c54cb126764",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "a345db098d4c0211",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "CPU 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 780,
+        "y": 634,
+        "wires": []
+    },
+    {
+        "id": "ee8180b0b7928a63",
+        "type": "ui_text",
+        "z": "939c46d87dd12260",
+        "group": "a345db098d4c0211",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "CPU 4",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 782,
+        "y": 674,
+        "wires": []
+    },
+    {
+        "id": "bb8fc767bccec06e",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.loadavg[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 554,
+        "y": 231,
+        "wires": [
+            [
+                "15de5e65b56d130c"
+            ]
+        ]
+    },
+    {
+        "id": "15de5e65b56d130c",
+        "type": "ui_chart",
+        "z": "939c46d87dd12260",
+        "name": "CPU Load - Historical",
+        "group": "f987673bee729608",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "label": "24 Hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "%H:%M:%S",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderUnit": "86400",
+        "outputs": 1,
+        "x": 746,
+        "y": 231,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e9318c9e959f507",
+        "type": "function",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "func": "msg.payload = msg.payload.memusage;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 329,
+        "y": 662,
+        "wires": [
+            [
+                "784480094ee653f7"
+            ]
+        ]
+    },
+    {
+        "id": "784480094ee653f7",
+        "type": "ui_chart",
+        "z": "939c46d87dd12260",
+        "name": "Memory - 24 Hours",
+        "group": "928d556347f4cc50",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "label": "24 Hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "%H:%M:%S",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderUnit": "86400",
+        "outputs": 1,
+        "x": 527,
+        "y": 665,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58dac8d2162a405e",
+        "type": "comment",
+        "z": "939c46d87dd12260",
+        "name": "CPU Load",
+        "info": "",
+        "x": 704,
+        "y": 59,
+        "wires": []
+    },
+    {
+        "id": "906dda13a6c0d4fe",
+        "type": "comment",
+        "z": "939c46d87dd12260",
+        "name": "Memory Usage",
+        "info": "",
+        "x": 512,
+        "y": 615,
+        "wires": []
+    },
+    {
+        "id": "3d348ff71620d158",
+        "type": "comment",
+        "z": "939c46d87dd12260",
+        "name": "System Information",
+        "info": "",
+        "x": 803,
+        "y": 304,
+        "wires": []
+    },
+    {
+        "id": "73a2ba050dc88fc3",
+        "type": "OS",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "aa09957a7496ba74",
+                "e785204ca4540c61",
+                "add0978dbfb7411d",
+                "dd31eb7f1c662a06"
+            ]
+        ]
+    },
+    {
+        "id": "eeee787441676ebd",
+        "type": "Uptime",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "x": 461,
+        "y": 355,
+        "wires": [
+            [
+                "e5af5febb321d71c"
+            ]
+        ]
+    },
+    {
+        "id": "64c91622861144bb",
+        "type": "CPUs",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "x": 450,
+        "y": 445,
+        "wires": [
+            [
+                "cdbdd6e6945b2014"
+            ]
+        ]
+    },
+    {
+        "id": "ede9682a9533cc5b",
+        "type": "Loadavg",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "x": 387,
+        "y": 167,
+        "wires": [
+            [
+                "308a9ea6405562da",
+                "98bcea1b0117b271",
+                "93b52cf033a0fc35",
+                "bb8fc767bccec06e"
+            ]
+        ]
+    },
+    {
+        "id": "0f148970effb4ca5",
+        "type": "Memory",
+        "z": "939c46d87dd12260",
+        "name": "",
+        "x": 327,
+        "y": 533,
+        "wires": [
+            [
+                "cbf715f937607c5a",
+                "74e15a3d4e49ccc8",
+                "808d8aa5b92cb897",
+                "2e9318c9e959f507"
+            ]
+        ]
+    },
+    {
+        "id": "5402fa0f5cf1e00b",
         "type": "global-config",
         "env": [],
         "modules": {
-            "node-red-dashboard": "3.6.5"
+            "node-red-dashboard": "3.6.5",
+            "node-red-node-pi-gpio": "2.0.6",
+            "node-red-contrib-os": "0.2.1"
         }
     }
 ]
